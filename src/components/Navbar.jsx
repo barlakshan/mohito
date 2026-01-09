@@ -25,17 +25,19 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href="#home" className="flex flex-center gap-2">
-        <img src="/images/logo.png" alt="Logo" />
-        <p>Velvet Pour</p>
-      </a>
-      <ul>
-        {navLinks.map((link) => (
-          <li key={link.id}>
-            <a href={`#${link.id}`}>{link.title}</a>
-          </li>
-        ))}
-      </ul>
+      <div className="flex justify-between w-full">
+        <a href="#home" className="flex flex-center gap-2">
+          <img src="/images/logo.png" alt="Logo" />
+          <p>Velvet Pour</p>
+        </a>
+        <ul>
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };
