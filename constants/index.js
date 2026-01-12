@@ -123,8 +123,8 @@ const socials = [
     url: "#",
   },
   {
-    name: "X (Twitter)",
-    icon: "/images/x.png",
+    name: "Tiktok",
+    icon: "/images/tiktok.png",
     url: "#",
   },
   {
